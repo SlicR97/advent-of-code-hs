@@ -18,7 +18,9 @@ description:         Please see the README on GitHub at <https://github.com/Slic
 dependencies:
 - base >= 4.7 && < 5
 - containers
+- utf8-string
 - regex-tdfa
+- cryptonite
 
 ghc-options:
 - -Wall
