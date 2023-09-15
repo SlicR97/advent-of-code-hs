@@ -1,0 +1,48 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           adventofcode
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/SlicR97/advent-of-code-hs#readme>
+homepage:       https://github.com/SlicR97/advent-of-code-hs#readme
+bug-reports:    https://github.com/SlicR97/advent-of-code-hs/issues
+author:         Nico Loos
+maintainer:     nico.loos@slicr.de
+copyright:      2023 Nico Loos
+license:        BSD3
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/SlicR97/advent-of-code-hs
+
+library
+  exposed-modules:
+      Shared
+      Challenge01
+  other-modules:
+      Paths_adventofcode
+  hs-source-dirs:
+      src
+      src/Solutions
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , containers
+  default-language: Haskell2010
+
+executable adventofcode-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_adventofcode
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adventofcode
+    , base >=4.7 && <5
+    , containers
+  default-language: Haskell2010
