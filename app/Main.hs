@@ -1,12 +1,13 @@
 module Main (main) where
 
 import qualified Shared as S
+import qualified Challenge01 as C1
 import Data.Map (fromList, (!), Map)
 import System.Environment (getArgs)
 
 challenges :: Map String S.Challenge
-challenges = fromList
-  [
+challenges = fromList 
+  [ ("01", C1.challengeSolver)
   ]
 
 main :: IO ()
