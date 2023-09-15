@@ -4,6 +4,7 @@ import qualified Shared as S
 import qualified Challenge01 as C1
 import qualified Challenge02 as C2
 import qualified Challenge03 as C3
+import qualified Challenge04 as C4
 import Data.Map (fromList, (!), Map)
 import System.Environment (getArgs)
 
@@ -12,6 +13,7 @@ challenges = fromList
   [ ("01", C1.challengeSolver)
   , ("02", C2.challengeSolver)
   , ("03", C3.challengeSolver)
+  , ("04", C4.challengeSolver)
   ]
 
 main :: IO ()
