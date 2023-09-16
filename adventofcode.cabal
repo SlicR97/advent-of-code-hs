@@ -26,6 +26,7 @@ library
       Challenge02
       Challenge03
       Challenge04
+      Challenge05
   other-modules:
       Paths_adventofcode
   hs-source-dirs:

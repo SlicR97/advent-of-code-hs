@@ -5,6 +5,7 @@ import qualified Challenge01 as C1
 import qualified Challenge02 as C2
 import qualified Challenge03 as C3
 import qualified Challenge04 as C4
+import qualified Challenge05 as C5
 import Data.Map (fromList, (!), Map)
 import System.Environment (getArgs)
 
@@ -14,6 +15,7 @@ challenges = fromList
   , ("02", C2.challengeSolver)
   , ("03", C3.challengeSolver)
   , ("04", C4.challengeSolver)
+  , ("05", C5.challengeSolver)
   ]
 
 main :: IO ()
